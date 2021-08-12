@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:heiner/Resources/Private/Language/locallang_db" date="2021-08-10T17:17:42Z" product-name="heiner">
+		<header/>
+		<body>
+			<trans-unit id="tx_heiner_domain_model_customfooter" resname="tx_heiner_domain_model_customfooter">
+				<source>Custom Footer</source>
+			</trans-unit>
+			<trans-unit id="tx_heiner_domain_model_customfooter.service" resname="tx_heiner_domain_model_customfooter.service">
+				<source>Service</source>
+			</trans-unit>
+			<trans-unit id="tx_heiner_domain_model_customfooter.service_link" resname="tx_heiner_domain_model_customfooter.service_link">
+				<source>Service Link</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

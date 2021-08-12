@@ -1,0 +1,22 @@
+{
+    "name": "heiner/heiner",
+    "type": "typo3-cms-extension",
+    "description": "Dynamisierung eines Templates zum \u00dcben",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Heiner\\Heiner\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Heiner\\Heiner\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/heiner": "self.version"
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:heiner/Resources/Private/Language/locallang_csh" date="2021-08-10T17:17:42Z" product-name="heiner">
+		<header/>
+		<body>
+			<trans-unit id="service.description" resname="service.description">
+				<source>service</source>
+			</trans-unit>
+			<trans-unit id="service_link.description" resname="service_link.description">
+				<source>serviceLink</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

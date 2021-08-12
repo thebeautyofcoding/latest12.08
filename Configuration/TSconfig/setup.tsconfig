@@ -1,0 +1,45 @@
+mod.wizards.newContentElement.wizardItems.extra {
+    header = Custom Elements
+    icon =
+    elements {
+        portfolio_list {
+            iconIdentifier = my-icon-identifier
+            title = custom element
+            description = Ein tolles custom element
+            tt_content_defValues {
+                CType = portfolio_list
+            }
+        }
+    }
+    show := addToList(portfolio_list)
+}
+    mod.wizards.newContentElement.wizardItems.extra {
+    header = Custom Elements
+    icon =
+    elements {
+        custom_footer {
+            iconIdentifier = my-icon-identifier
+            title = custom_footer
+            description = Ein tolles custom element
+            tt_content_defValues {
+                CType = custom_footer
+            }
+        }
+    }
+    show := addToList(custom_footer)
+}
+// mod.wizards.newContentElement.wizardItems.extra {
+//     header = Custom Elements
+//     icon =
+//     elements {
+//         portfolio_list2 {
+//             iconIdentifier = my-icon-identifier
+//             title = custom element2
+//             description = Ein tolles custom element2
+//             tt_content_defValues {
+//                 CType = portfolio_list2
+//             }
+//         }
+//     }
+//     show := addToList(portfolio_list2)
+// }

@@ -1,0 +1,62 @@
+>
+<footer id="Footer" class="clearfix">
+    <div class="widgets_wrapper">
+        <div class="container">
+            <div class="column one-second">
+                <aside class="widget_text widget widget_custom_html">
+                    <div class="textwidget custom-html-widget">
+                        <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                            <div class="image_wrapper">
+                                
+                                <f:if condition="{files}">
+                                    <f:image image="{files.0}"/>
+                                </f:if>
+                           
+                            </div>
+                        </div>
+                        <hr class="no_line" style="margin:0 auto 30px"> <f:format.raw>{data.bodytext}</f:format.raw>
+                    </div>
+                </aside>
+            </div>
+            <div class="column one-fourth">
+                <aside class="widget_text widget widget_custom_html">
+                    <div class="textwidget custom-html-widget">
+                        <h6>Services</h6>
+                        <f:for each="{elements}" as="element">
+                            <a href="{element.service_link}" style="color:inherit">{element.data.service}</a>
+                            <br>
+                        </f:for>
+                    </div>
+                </aside>
+            </div>
+            <div class="column one-fourth">
+                <aside class="widget_text widget widget_custom_html">
+                    <div class="textwidget custom-html-widget">
+                        <h6>Website</h6>
+                        
+                        <!-- <a href="about.html" style="color:inherit">About Us</a>
+                        <br>
+                        <a href="#" style="color:inherit">Privacy Policy</a>
+                        <br>
+                        <a href="about.html" style="color:inherit">Our Team</a>
+                        <br>
+                        <a href="contact.html" style="color:inherit">Contact</a> -->
+
+                      
+                        <f:cObject typoscriptObjectPath="lib.footernav"/>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <div class="footer_copy">
+        <div class="container">
+            <div class="column one">
+                <a id="back_to_top" class="button button_js" href=""><i class="icon-up-open-big"></i></a>
+                <div class="copyright">
+                    © 2020 BeAgency 4 - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow" href="https://1.envato.market/9ZxXY">BeantownThemes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

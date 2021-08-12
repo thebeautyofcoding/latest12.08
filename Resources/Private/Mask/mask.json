@@ -1,0 +1,287 @@
+{
+    "sys_file_reference": {
+        "sql": {
+            "tx_mask_image": {
+                "sys_file_reference": {
+                    "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        }
+    },
+    "tt_content": {
+        "elements": {
+            "imageheadetext": {
+                "color": "#000000",
+                "columns": [
+                    "tx_mask_image",
+                    "tx_mask_header",
+                    "bodytext"
+                ],
+                "description": "Image with Header and Text",
+                "icon": "",
+                "key": "imageheadetext",
+                "label": "ImageHeaderText",
+                "labels": [
+                    "Image",
+                    "Header",
+                    "Text"
+                ],
+                "shortLabel": "imageHeadeText"
+            },
+            "jumbotronservices": {
+                "color": "#000000",
+                "columns": [
+                    "tx_mask_title",
+                    "tx_mask_unterzeile",
+                    "tx_mask_description"
+                ],
+                "description": "Jumbotron for services",
+                "icon": "",
+                "key": "jumbotronservices",
+                "label": "JumbotronServices",
+                "labels": [
+                    "Title",
+                    "Unterzeile",
+                    "description"
+                ],
+                "options": [
+                    "rte",
+                    "rte",
+                    "rte"
+                ],
+                "shortLabel": "JumbotronServices"
+            },
+            "service": {
+                "color": "#000000",
+                "columns": [
+                    "tx_mask_image",
+                    "tx_mask_title",
+                    "tx_mask_description",
+                    "tx_mask_list"
+                ],
+                "description": "Service consisting of Image, Title, Description, List",
+                "icon": "",
+                "key": "service",
+                "label": "Service (Image, Title, Description, List)",
+                "labels": [
+                    "image",
+                    "Title",
+                    "Description",
+                    "List"
+                ],
+                "options": {
+                    "1": "rte",
+                    "2": "rte"
+                },
+                "shortLabel": "service"
+            },
+            "servicereverseorder": {
+                "color": "#000000",
+                "columns": [
+                    "tx_mask_title",
+                    "tx_mask_description",
+                    "tx_mask_image",
+                    "tx_mask_list"
+                ],
+                "description": "Service(Title, Description, List, Image)",
+                "icon": "",
+                "key": "servicereverseorder",
+                "label": "ServiceReverseOrder",
+                "labels": [
+                    "Title",
+                    "Description",
+                    "Image",
+                    "List"
+                ],
+                "options": [
+                    "rte",
+                    "rte"
+                ],
+                "shortLabel": ""
+            }
+        },
+        "sql": {
+            "tx_mask_description": {
+                "tt_content": {
+                    "tx_mask_description": "mediumtext"
+                }
+            },
+            "tx_mask_header": {
+                "tt_content": {
+                    "tx_mask_header": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_image": {
+                "tt_content": {
+                    "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_list": {
+                "tt_content": {
+                    "tx_mask_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_title": {
+                "tt_content": {
+                    "tx_mask_title": "mediumtext"
+                }
+            },
+            "tx_mask_unterzeile": {
+                "tt_content": {
+                    "tx_mask_unterzeile": "mediumtext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_description": {
+                "config": {
+                    "cols": "",
+                    "default": "",
+                    "enableRichtext": "1",
+                    "eval": "",
+                    "max": "",
+                    "placeholder": "",
+                    "richtextConfiguration": "default",
+                    "rows": "",
+                    "type": "text"
+                },
+                "exclude": "1",
+                "key": "description",
+                "l10n_mode": ""
+            },
+            "tx_mask_header": {
+                "cTypes": [
+                    "header"
+                ],
+                "config": {
+                    "appearance": {
+                        "collapseAll": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "levelLinksPosition": "top",
+                        "newRecordLinkTitle": "",
+                        "showAllLocalizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showSynchronizationLink": "1",
+                        "useSortable": "1"
+                    },
+                    "foreign_sortby": "sorting",
+                    "foreign_table": "tt_content",
+                    "maxitems": "",
+                    "minitems": "",
+                    "overrideChildTca": {
+                        "columns": {
+                            "colPos": {
+                                "config": {
+                                    "default": "999"
+                                }
+                            }
+                        }
+                    },
+                    "type": "inline"
+                },
+                "exclude": "1",
+                "key": "header",
+                "l10n_mode": ""
+            },
+            "tx_mask_image": {
+                "config": {
+                    "filter": [
+                        {
+                            "parameters": {
+                                "allowedFileExtensions": ""
+                            }
+                        }
+                    ],
+                    "maxitems": "",
+                    "minitems": ""
+                },
+                "exclude": "1",
+                "key": "image",
+                "l10n_mode": "",
+                "options": "file"
+            },
+            "tx_mask_list": {
+                "cTypes": [
+                    "bullets"
+                ],
+                "config": {
+                    "appearance": {
+                        "collapseAll": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "levelLinksPosition": "top",
+                        "newRecordLinkTitle": "",
+                        "showAllLocalizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showSynchronizationLink": "1",
+                        "useSortable": "1"
+                    },
+                    "foreign_sortby": "sorting",
+                    "foreign_table": "tt_content",
+                    "maxitems": "",
+                    "minitems": "",
+                    "overrideChildTca": {
+                        "columns": {
+                            "colPos": {
+                                "config": {
+                                    "default": "999"
+                                }
+                            }
+                        }
+                    },
+                    "type": "inline"
+                },
+                "exclude": "1",
+                "key": "list",
+                "l10n_mode": ""
+            },
+            "tx_mask_title": {
+                "config": {
+                    "cols": "",
+                    "default": "",
+                    "enableRichtext": "1",
+                    "eval": "",
+                    "max": "",
+                    "placeholder": "",
+                    "richtextConfiguration": "default",
+                    "rows": "",
+                    "type": "text"
+                },
+                "exclude": "1",
+                "key": "title",
+                "l10n_mode": ""
+            },
+            "tx_mask_unterzeile": {
+                "config": {
+                    "cols": "",
+                    "default": "",
+                    "enableRichtext": "1",
+                    "eval": "",
+                    "max": "",
+                    "placeholder": "",
+                    "richtextConfiguration": "default",
+                    "rows": "",
+                    "type": "text"
+                },
+                "exclude": "1",
+                "key": "unterzeile",
+                "l10n_mode": ""
+            }
+        }
+    },
+    "tx_mask_list": {
+        "sql": [],
+        "tca": []
+    },
+    "tx_mask_servicelist": {
+        "sql": [],
+        "tca": []
+    },
+    "tx_mask_servicelistalternating": {
+        "sql": [],
+        "tca": []
+    }
+}
