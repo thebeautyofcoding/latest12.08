@@ -14,7 +14,7 @@ CREATE TABLE tx_heiner_domain_model_footer (
    uid int(11) unsigned DEFAULT 0 NOT NULL auto_increment,
    sorting	int(11) unsigned DEFAULT 0 NOT NULL,
 	service varchar(255) DEFAULT '' NOT NULL,
-	serviceLink varchar(255) DEFAULT '' NOT NULL,
+	service_link varchar(255) DEFAULT '' NOT NULL,
     PRIMARY KEY (uid),
     KEY parent (pid)
  

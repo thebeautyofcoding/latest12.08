@@ -119,15 +119,11 @@ page {
 
  
     includeCSS {
-     
-       
-  
-    
-          50=EXT:heiner/Resources/Public/Css/global.css
-            60=EXT:heiner/Resources/Public/Css/el_demo.css
-                  70=EXT:heiner/Resources/Public/Css/structure.css
-             80=EXT:heiner/Resources/Public/Css/agency4.css
-     90=EXT:heiner/Resources/Public/Css/custom.css
+        50=EXT:heiner/Resources/Public/Css/global.css
+        60=EXT:heiner/Resources/Public/Css/el_demo.css
+        70=EXT:heiner/Resources/Public/Css/structure.css
+        80=EXT:heiner/Resources/Public/Css/agency4.css
+        90=EXT:heiner/Resources/Public/Css/custom.css
     }
  
     includeJS {
@@ -136,22 +132,15 @@ page {
  
    
     includeJSFooter {
-   10=EXT:heiner/Resources/Public/js/jquery-2.1.4.min.js
-               20=EXT:heiner/Resources/Public/js/mfn.menu.js
-       
-         30=EXT:heiner/Resources/Public/js/jquery.plugins.js
-      40=EXT:heiner/Resources/Public/js/jquery.jplayer.min.js
-          50=EXT:heiner/Resources/Public/js/animations/animations.js
+        10=EXT:heiner/Resources/Public/js/jquery-2.1.4.min.js
+        20=EXT:heiner/Resources/Public/js/mfn.menu.js
+        30=EXT:heiner/Resources/Public/js/jquery.plugins.js
+        40=EXT:heiner/Resources/Public/js/jquery.jplayer.min.js
+        50=EXT:heiner/Resources/Public/js/animations/animations.js
         60=EXT:heiner/Resources/Public/js/translate3d.js
-            80=EXT:heiner/Resources/Public/js/email.js
-       
-      
-  
-   
-        
-            70=EXT:heiner/Resources/Public/js/scripts.js
- 
-      100=EXT:heiner/Resources/Public/js/el_demo.js
+        80=EXT:heiner/Resources/Public/js/email.js
+        70=EXT:heiner/Resources/Public/js/scripts.js
+        100=EXT:heiner/Resources/Public/js/el_demo.js
    }
  
 }
@@ -347,7 +336,6 @@ tt_content {
    }
 }
             #Footer navigation
-
 
 
 

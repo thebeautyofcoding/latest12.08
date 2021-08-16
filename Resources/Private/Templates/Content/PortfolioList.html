@@ -1,7 +1,8 @@
 
 
 
-
+<section class="elementor-element elementor-element-1cbb9c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="1cbb9c6" data-element_type="section">
+                          
             <div class="elementor-element elementor-element-663fb68 elementor-column elementor-col-100 elementor-top-column" data-id="663fb68" data-element_type="column">
                 <div class="elementor-column-wrap elementor-element-populated">
                     <div class="elementor-widget-wrap">
@@ -35,7 +36,10 @@
                                                     </div>
                                                     <div class="desc">
                                                         <div class="title_wrapper">
-                                                            <h5 class="entry-title"><a class="link" href="portfolio-item.html">{element.data.header}</a></h5>
+                                                            <h5 class="entry-title"><a class="link" href="portfolio-item.html">
+                                                                <core:contentEditable table="tx_heiner_domain_model_content" field="header" uid="{element.data.uid}">
+                                                                <f:format.raw>{element.data.header}</f:format.raw>
+                                                                </core:contentEditable></a></h5>
                                                             <div class="button-love">
                                                                 <a href="#" class="mfn-love" data-id="303"><span class="icons-wrapper"><i class="icon-heart-empty-fa"></i><i class="icon-heart-fa"></i></span><span class="label">28</span></a>
                                                             </div>
@@ -51,7 +55,11 @@ Date
                                                             </dl>
                                                         </div>
                                                         <div class="desc-wrapper">
-                                                            <f:format.raw>{element.data.bodytext}</f:format.raw>
+                                                            <core:contentEditable table="tx_heiner_domain_model_content" field="bodytext" uid="{element.data.uid}">
+                                                                <f:format.raw>{element.data.bodytext}</f:format.raw>
+                                                                </core:contentEditable>
+                                                        
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
