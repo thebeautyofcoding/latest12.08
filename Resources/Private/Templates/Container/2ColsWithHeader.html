@@ -1,16 +1,72 @@
-<f:debug>container</f:debug>
-<f:debug>{_all}</f:debug>
-                                    <f:for each="{children_201}" as="record">
-                                
-                                        <f:format.raw>
-                                            {record.renderedContent}
-                                        </f:format.raw>
-                                    </f:for>
 
-                                        <f:for each="{children_202}" as="record">
-                                       
-                                            <f:format.raw>
-                                                       {record.renderedContent}
-                                            </f:format.raw>
-                                  
-</f:for>
+<section class="elementor-element elementor-element-5b5fb2a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="5b5fb2a" data-element_type="section">
+    <core:customDropZone tables="{0:'tt_content'}">
+    <div class="elementor-container elementor-column-gap-wider">
+        <div class="elementor-row">
+            
+            <div class="elementor-element elementor-element-55c4f9b elementor-column elementor-col-50 elementor-inner-column" data-id="55c4f9b" data-element_type="column">
+                
+                    <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                            <div class="elementor-element elementor-element-7d74ad3 elementor-mobile-align-left elementor-icon-list--layout-traditional elementor-widget elementor-widget-icon-list" data-id="7d74ad3" data-element_type="widget" data-widget_type="icon-list.default">
+                                <div class="elementor-widget-container">
+                        
+                                
+                                    <f:for each="{children_201}" as="record">                         
+                                        <core:contentEditable table="tt_content" field="bodytext" uid="{record.uid}">
+                                                <f:format.raw>{record.bodytext}</f:format.raw>
+                                                </core:contentEditable> 
+                                    </f:for>
+                                
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+            </div>
+
+
+
+
+            <div class="elementor-element elementor-element-5fc7e9e elementor-column elementor-col-50 elementor-inner-column" data-id="5fc7e9e" data-element_type="column">
+                <div class="elementor-column-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-0b1f1ba elementor-icon-list--layout-traditional elementor-widget elementor-widget-icon-list" data-id="0b1f1ba" data-element_type="widget" data-widget_type="icon-list.default">
+                            <div class="elementor-widget-container">
+                                <ul class="elementor-icon-list-items">
+
+
+
+                                <f:for each="{children_202}" as="record">
+                                    
+                                    
+
+
+
+                                        <core:contentEditable table="tt_content" field="bodytext" uid="{record.uid}">
+                                            <f:format.raw>{record.bodytext}</f:format.raw>
+                                            </core:contentEditable> 
+                                            
+                                
+                                                                
+                                </f:for>
+
+
+</ul>
+
+
+
+
+    
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</core:customDropZone>
+</section>

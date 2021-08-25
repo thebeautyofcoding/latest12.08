@@ -1,16 +1,13 @@
 
 
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 
-<section class="elementor-element elementor-element-1cbb9c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="1cbb9c6" data-element_type="section">
-                          
-            <div class="elementor-element elementor-element-663fb68 elementor-column elementor-col-100 elementor-top-column" data-id="663fb68" data-element_type="column">
-                <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                        <div class="elementor-element elementor-element-45a664f elementor-widget elementor-widget-mfn_portfolio" data-id="45a664f" data-element_type="widget" data-widget_type="mfn_portfolio.default">
-                            <div class="elementor-widget-container">
-                                <div class="column_filters">
-                                    <div class="portfolio_wrapper isotope_wrapper">
-                                        <ul class="portfolio_group lm_wrapper isotope col-2 masonry" style="position: relative; height: 1301.47px;">
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+data-namespace-typo3-fluid="true"
+
+>
+
+
                                             
                                             <f:for each="{elements}" as="element">
                                             <li class="portfolio-item isotope-item has-thumbnail" style="position: absolute; left: 0px; top: 0px;">
@@ -26,9 +23,20 @@
                                                     <div class="image_frame scale-with-grid">
                                                         <div class="image_wrapper">
                                                             <a href="portfolio-item.html">
-                                                               
+                                                              
+                                                              
                                                                 
-                                                                <div class="mask"></div><f:image image="{element.files.0.originalFile}" width="780" height="437" class="scale-with-grid wp-post-image" alt=""/></a>
+                                                             
+                                                            
+                                                                    
+                                                                 
+                                                                      
+                                                                        <f:link.typolink parameter="5">
+                                                                            <div class="mask"></div><f:image image="{element.files.0.originalFile}" width="780" height="437" class="scale-with-grid wp-post-image" alt=""/>
+                                                                        </f:link.typolink>
+                                                                  
+                                                              
+                                                          
                                                             <div class="image_links double">
                                                                 <a href="images/agency4-portfolio-single6.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="portfolio-item.html" class="link"><i class="icon-link"></i></a>
                                                             </div>
@@ -78,3 +86,4 @@ Date
         </div>
     </div>
 </section>
+</html>

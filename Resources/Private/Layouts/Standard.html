@@ -1,13 +1,24 @@
 
 
 
+<f:if condition="{data.backend_layout}==1">
+    <f:render section="content" /> <f:render section="2columns" />    
+
+
+</f:if>
 
 
 
 
-    <f:render section="content" />
 
 
 
+
+<f:if condition="{data.backend_layout}==3">
+    <f:render section="2columns" />
+ 
+
+
+</f:if>
 
 

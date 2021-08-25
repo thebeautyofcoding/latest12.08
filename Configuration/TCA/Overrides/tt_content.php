@@ -162,6 +162,49 @@ $GLOBALS['TCA']['tt_content']['types']['custom_footer'] = [
         ],
     ],
 ];
+
+
+$GLOBALS['TCA']['tt_content']['types']['bodytext'] = [
+    'showitem' => '
+          --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+             --palette--;;general,
+            
+        
+            bodytext;Inhalt,
+            
+             
+          --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+             --palette--;;hidden,
+             --palette--;;access,
+       ',
+    'columnsOverrides' => [
+        'bodytext' => [
+            'config' => [
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default',
+            ],
+        ],
+
+    ],
+];
+
+
+
+$customFields = [
+    'bodytext' => [
+        'exclude' => false,
+        'l10n_mode' => 'prefixLangTitle',
+        'label' => 'Inhalt',
+        'config' => [
+            'type' => 'text',
+            'cols' => 40,
+            'rows' => 6,
+            'enableRichtext' => true
+        ],
+    ]
+];
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content',$customFields);
+
 // $GLOBALS['TCA']['tt_content']['columns']['header']['config']=[
 //     'type' => 'inline',
 //     'foreign_table' => 'tt_content',
@@ -387,3 +430,92 @@ $service_entry = [
             'EXT:container_example/Resources/Public/Icons/b13-2cols-with-header-container.svg'
         )
 );
+
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+    \B13\Container\Tca\Registry::class
+)->configureContainer(
+    (new \B13\Container\Tca\ContainerConfiguration(
+        'b13-2ColSection1AboutUs', // CType
+        '2 Column Container for Section1 in About us', // label
+        'Some Description of the Container', // description
+        [
+            [
+                [
+                    'name' => 'header',
+                    'colPos' => 210,
+                    'colspan' => 2,
+                    'allowed' => ['CType' => 'header, textmedia'],
+                ],
+            ],
+            [
+                ['name' => 'left side', 'colPos' => 208],
+                ['name' => 'right side', 'colPos' => 209],
+            ],
+        ] // grid configuration
+    ))
+        // set an optional icon configuration
+        ->setIcon(
+            'EXT:container_example/Resources/Public/Icons/b13-2cols-with-header-container.svg'
+        )
+);
+
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+    \B13\Container\Tca\Registry::class
+)->configureContainer(
+    (new \B13\Container\Tca\ContainerConfiguration(
+        'b13-1col-section1-aboout-us', // CType
+        '1 Column Container for Section1 in About us', // label
+        'Some Description of the Container', // description
+        [
+            [
+                [
+                    'name' => 'header',
+                    'colPos' => 213,
+                    'colspan' => 2,
+                    'allowed' => ['CType' => 'header, textmedia'],
+                ],
+            ],
+            [
+                ['name' => 'normal', 'colPos' => 214],
+               
+            ],
+        ] // grid configuration
+    ))
+        // set an optional icon configuration
+        ->setIcon(
+            'EXT:container_example/Resources/Public/Icons/b13-2cols-with-header-container.svg'
+        )
+);
+
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+    \B13\Container\Tca\Registry::class
+)->configureContainer(
+    (new \B13\Container\Tca\ContainerConfiguration(
+        'b13-1col-section1Image-aboout-us', // CType
+        '1 Column Image', // label
+        'Some Description of the Container', // description
+        [
+            [
+                [
+                    'name' => 'header',
+                    'colPos' => 220,
+                    'colspan' => 2,
+                    'allowed' => ['CType' => 'header, textmedia'],
+                ],
+            ],
+            [
+                ['name' => 'normal', 'colPos' => 221],
+               
+            ],
+        ] // grid configuration
+    ))
+        // set an optional icon configuration
+        ->setIcon(
+            'EXT:container_example/Resources/Public/Icons/b13-2cols-with-header-container.svg'
+        )
+);
+
+
